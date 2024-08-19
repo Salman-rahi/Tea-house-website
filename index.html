@@ -16,23 +16,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
 <body>
-    <header>
 
-    </header>
-    <main>
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+        <!-- Header section -->
+        <header class="flex pt-10 mb-20">
+            <!-- Text content -->
+            <div class=" space-y-6">
+                <h1 class="text-7xl text-[#1C1C1C] font-extrabold">It's good <br>
+                    tea time at The <br> Tea House</h1>
+                <p class="w-3/4 text-lg text-[#777777]">
+                    Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                </p>
+                <button
+                    class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-xl text-white py-4 px-5 text-xl font-bold">
+                    Explore More
+                    <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
+                </button>
 
+            </div>
+            <!-- Img content  -->
+            <div class="relative">
+                <img class="w-full" src="images/banner.png" alt="">
+                <!-- card -->
+
+                <div class="flex items-center px-2 md:px-10 lg:py-4 rounded-xl bg-white shadow-lg absolute top-28 md:top-80 left-32 lg:left-20">
+                    <div>
+                        <i class="fa-solid fa-star text-2xl text-amber-500"></i>
+                    </div>
+                    <div  class="ml-2">
+                        <h3 class="text-3xl font-bold">5.00</h3>
+                        <p class="text-[#777777] font-semibold text-base ">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+
+        </header>
     </main>
     <footer>
 
